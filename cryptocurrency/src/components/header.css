@@ -1,0 +1,23 @@
+header{
+    background-color:#008CBA;
+    width: 100%;
+}
+.header-cont{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 220px;
+}
+.search-bar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+input{
+    align-items: center;
+	display: flex;
+	justify-content: space-between;
+	margin: 0.5em 0;
+	padding: 0.5em 0.5em 0.5em 1em;
+	border-radius: 15px;
+}

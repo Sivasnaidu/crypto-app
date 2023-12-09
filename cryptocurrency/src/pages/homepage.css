@@ -1,0 +1,55 @@
+
+@media only screen and (max-width: 480px) {
+    table {
+      width: 100%;
+      overflow-x: auto;
+    }
+  
+    th, td {
+      white-space: nowrap;
+    }
+  
+    td img {
+      width: 30px; 
+      height: 30px; 
+    }
+  }
+  
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  thead {
+    background-color: #f2f2f2;
+  }
+  
+  th {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+ 
+  td img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+  }
+  
+  
+  td[style] {
+    font-weight: bold;
+  }
+  
