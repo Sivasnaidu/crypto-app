@@ -56,4 +56,7 @@ let b = 20;
 [a,b] = [b,a];
 console.log(a) // outpuut: 20 swap easy with destructuring method
 
-
+const myFunc = ({x,y,z})=> {
+  console.log(x,y,z)
+}
+myFunc(2,4,5) // output: undefiend undefied because vales to objects will bnot assign
