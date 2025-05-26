@@ -1,1 +1,59 @@
+const data = 100;
+console.log(data.toString());
+console.log(100.toString());  // will throw error  dot will access member or decimal places 
+console.log((100).toString()); // this will fix the issue 
+
+let sum = 20;
+console.log(sum + "20");
+console.log(++sum); //output:21,  will give 21 because it will concatinate and increase
+
+function magic(){
+return count = 100;
+}
+console.log(magic()) // output: 100  because it will think var is default available 
+
+let person = {name: "John"};
+const naman = [person];
+person = null;
+console.log(naman) // output; [{name: "John"}]
+
+const isNum = 100 == ['100'];
+console.log(isNum) // output: true 
+
+export default function App() {
+    const items = [1,2,3,4,5,6,7]
+ const items = [
+    { id: 1, value: 1 },
+    { id: 2, value: 2 },
+    { id: 3, value: 3 },
+    { id: 4, value: 4 },
+    { id: 5, value: 5 },
+    { id: 6, value: 6 },
+    { id: 7, value: 7 }
+  ]; // correct method 
+  return (
+      <div>
+          {items.map((item, index)=> {
+         return <h1 key = {index}>{item}</h1> // key = {item.id}
+          })}
+      </div>
+  )
+}  // when we pass items we use key prop to identify items uniquely should use ID
+
+
+class person {
+
+}
+console.log(typeOf person); //output : function default for class 
+
+console.log([1,10,3,20].sort())// it will convert utf16 
+console.log([1,10,3,20].sort((a,b)=> b - a)) // this will work 
+
+
+
+let a = 10;
+let b = 20;
+[a,b] = [b,a];
+console.log(a) // outpuut: 20 swap easy with destructuring method
+
 
